@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+
+<!-- Mirrored from www.lepenscope.fr/videos.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 May 2017 11:59:27 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>Lepenscope</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bubble_chart.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+
+<script>
+
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+</script>
+
+<style>
+    .youtube-player {
+        position: relative;
+        padding-bottom: 56.23%;
+        /* Use 75% for 4:3 videos */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 5px;
+    }
+    
+    .youtube-player iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        background: transparent;
+    }
+    
+    .youtube-player img {
+        bottom: 0;
+        display: block;
+        left: 0;
+        margin: auto;
+        max-width: 100%;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        -webkit-transition: .4s all;
+        -moz-transition: .4s all;
+        transition: .4s all;
+    }
+    
+    .youtube-player img:hover {
+        -webkit-filter: brightness(75%);
+    }
+    
+    .youtube-player .play {
+        height: 72px;
+        width: 72px;
+        left: 50%;
+        top: 50%;
+        margin-left: -36px;
+        margin-top: -36px;
+        position: absolute;
+        background: url("http://i.imgur.com/TxzC70f.png") no-repeat;
+        cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><b>Le Lepenscope</b></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="index-2.html">Ses amis</a></li>
+        <li><a href="liste.html">La liste</a></li>
+        <li class="active"><a href="videos.html">Vidéos</a></li>
+        <li><a href="liens.html">Liens utiles</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="citations.html">Citations</a></li>
+        <li><a href="sources.html">A propos</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <h1><center>Quelques vidéos pour décrypter En Marche !</center></h1>
+    <br>
+
+
+<center>
+
+ <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+        Lepen : la vision d'un projet</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">
+          <div class="youtube-player" data-id="jlGbjnctazQ"></div>
+          <center><a href="https://www.youtube.com/watch?v=jlGbjnctazQ" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+        Lepen en marche arrière</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">
+          <div class="youtube-player" data-id="6prTMA81Moo"></div>
+          <center><a href="https://www.youtube.com/watch?v=6prTMA81Moo" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+        Lepen révolutionnaire antisystème</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">
+          <div class="youtube-player" data-id="B7HpXO08FLA"></div>
+          <center><a href="https://www.youtube.com/watch?v=B7HpXO08FLA" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+        Retour sur l'ambiance des meetings d'Famille Lepen</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="3BPckfQ8N7c"></div>
+          <center><a href="https://www.youtube.com/watch?v=3BPckfQ8N7c" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+        Qui est vraiment Lepen?</a>
+      </h4>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="V9LbK-QXdYA"></div>
+          <center><a href="https://www.youtube.com/watch?v=V9LbK-QXdYA" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+        Famille Lepen candidat de la finance?</a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="Fgym_ZvfD5w"></div>
+          <center><a href="https://www.youtube.com/watch?v=Fgym_ZvfD5w" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+        L'opportuniste et la déchéance de nationalité</a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="_wE0AxRnMi8"></div>
+          <center><a href="https://www.youtube.com/watch?v=_wE0AxRnMi8" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+        LCI - L'émission qui égratigne le candidat marketing</a>
+      </h4>
+    </div>
+    <div id="collapse8" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="ASXXguaUTno"></div>
+          <center><a href="https://www.youtube.com/watch?v=ASXXguaUTno" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+        Lepen sait-il mentir ?</a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="ahauiQV4xEw"></div>
+          <center><a href="https://www.youtube.com/watch?v=ahauiQV4xEw" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+        Si vous hésitez à voter Lepen...</a>
+      </h4>
+    </div>
+    <div id="collapse10" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="56hLRvsWbCA"></div>
+          <center><a href="https://www.youtube.com/watch?v=56hLRvsWbCA" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">
+        Les Pinçon-Charlot analysent le cas Famille Lepen</a>
+      </h4>
+    </div>
+    <div id="collapse11" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="ychwDoh5GIo"></div>
+          <center><a href="https://www.youtube.com/watch?v=ychwDoh5GIo" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">
+        Merci Lepen ! (Fakir)</a>
+      </h4>
+    </div>
+    <div id="collapse12" class="panel-collapse collapse">
+      <div class="panel-body">
+        <div class="youtube-player" data-id="fau9yrG4yAk"></div>
+          <center><a href="https://www.youtube.com/watch?v=fau9yrG4yAk" target="_blank">Voir sur youtube</a></center>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <br>
+</center>
+
+    <div class="footer">
+      <p><a target="_blank" href="https://twitter.com/VilnusAtyx">Suggérer une vidéo ?</a></p>
+    </div>
+  </div>
+
+</body>
+
+<!-- Mirrored from www.lepenscope.fr/videos.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 May 2017 11:59:27 GMT -->
+</html>

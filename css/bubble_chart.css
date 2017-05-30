@@ -1,0 +1,90 @@
+a, a:visited, a:active {
+  color: rgb(0, 152, 182);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.button {
+  min-width: 130px;
+  padding: 4px 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+  text-decoration: none;
+}
+
+.button.active {
+  background: #000;
+  color: #fff;
+}
+
+
+#vis {
+  width: 940px;
+  height: 600px;
+  clear: both;
+  margin-bottom: 10px;
+}
+
+#toolbar {
+  margin-top: 10px;
+}
+
+.soutien, .ministre, .media, .elu {
+  font-size: 21px;
+  fill: #aaa;
+  cursor: default;
+}
+
+.tooltip {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+  -moz-border-radius:5px;
+	border-radius: 5px;
+  border: 2px solid #000;
+  background: #fff;
+	opacity: .9;
+  color: black;
+	padding: 10px;
+	width: 300px;
+	font-size: 12px;
+	z-index: 10;
+}
+
+.tooltip .title {
+	font-size: 13px;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+
+.footer {
+  text-align: center;
+}
+
+
+ul#side-navigation { padding-left: 0px; list-style: outside none none; }
+ul#side-navigation::before, ul#side-navigation::after { content: " "; display: table; }
+ul#side-navigation::after { clear: both; }
+ul#side-navigation li { transition: all 0.15s ease-out 0s; padding: 12.5px; border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentcolor rgb(216, 216, 216) rgb(216, 216, 216); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; background: rgb(255, 255, 255) none repeat scroll 0% 0%; color: rgb(81, 81, 81); box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.07); }
+.js ul#side-navigation li { cursor: pointer; }
+ul#side-navigation li:hover:not(.heading) { transform: scale(1.02); z-index: 10; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); }
+ul#side-navigation li:hover:not(.heading) a { text-decoration: underline; }
+ul#side-navigation li:hover:not(.heading) .fa { box-shadow: none ! important; text-shadow: none ! important; background: transparent none repeat scroll 0% 0% ! important; color: rgb(0, 182, 205) ! important; transform: scale(1.2) translateX(-2px); }
+ul#side-navigation li:first-child, ul#side-navigation li.heading { border-top: 1px solid rgb(216, 216, 216); }
+ul#side-navigation li.heading, ul#side-navigation li label { font-family: Montserrat,Roboto,"Segoe UI",Helvetica,Arial,sans-serif; font-weight: 700; text-transform: uppercase; font-size: 80%; letter-spacing: 0.06em; }
+ul#side-navigation li.heading, ul#side-navigation li label, ul#side-navigation li.heading a, ul#side-navigation li label a { color: rgb(195, 195, 195); }
+ul#side-navigation li.heading { margin-top: 12.5px; padding: 0px; background: rgb(250, 250, 250) none repeat scroll 0% 0%; }
+ul#side-navigation li.heading:hover { background-color: rgb(255, 255, 255); box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4); }
+ul#side-navigation li.heading > a, ul#side-navigation li.heading > span { transition: all 0.15s ease-out 0s; display: block; color: rgb(195, 195, 195); padding: 12.5px; }
+ul#side-navigation li.heading > a:hover, ul#side-navigation li.heading > span:hover { color: rgb(4, 4, 4); }
+ul#side-navigation li label { text-align: right; }
+ul#side-navigation li:not(.heading) .fa { transition: all 0.15s ease-out 0s; width: 35px; margin-left: 5px; padding: 5px; font-size: 16px; float: right; color: rgb(255, 255, 255); background: rgb(223, 223, 223) none repeat scroll 0% 0%; border-radius: 3px; box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.2) inset; text-shadow: -0.5px -0.5px 3px rgba(0, 0, 0, 0.2); }
+ul#side-navigation label { display: block; }
+ul#side-navigation span.alternate { font-size: 13.6px; text-transform: uppercase; letter-spacing: 0.1em; }
