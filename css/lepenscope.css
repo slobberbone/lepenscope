@@ -1,0 +1,30 @@
+/* LEPenScope Styles
+ *
+ */
+
+
+.navbar-insoumis {
+  background-color: #0098b6;
+  border-color: #e7e7e7;
+}
+.navbar-footer-insoumis {
+  background-color: #E23D22;
+  bottom: 0;
+  height: 60px;
+  line-height: 60px;
+  /*position: absolute;*/
+  width: 100%;
+}
+.text {
+  padding: 15px;
+  color: #FFFFFF;
+}
+
+ a.navbar-brand-insoumis {
+  color: #7A7A7A;
+  text-decoration: none;
+}
+a.navbar-nav-insoumis {
+  color: #7A7A7A;
+  text-decoration: none;
+}
